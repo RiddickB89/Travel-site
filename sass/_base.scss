@@ -8,24 +8,33 @@
   --grey-light-4: #ccc;
   --grey-dark-1: #333;
   --grey-dark-2: #777;
-  --grey-dark-3: #999; }
+  --grey-dark-3: #999;
+}
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  background-image: linear-gradient(to bottom right, var(--primary-light), var(--primary-dark));
-  min-height: 100vh; }
+  background-image: linear-gradient(
+    to bottom right,
+    var(--primary-light),
+    var(--primary-dark)
+  );
+  min-height: 100vh;
+}
