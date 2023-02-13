@@ -29,3 +29,25 @@ body {
   font-weight: 400;
   background-image: linear-gradient(to bottom right, var(--primary-light), var(--primary-dark));
   min-height: 100vh; }
+
+.container {
+  max-width: 140rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.8);
+  margin: 8rem auto;
+  min-height: 50rem;
+  background-color: var(--grey-light-1); }
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--grey-light-2); }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: var(--grey-dark-1);
+  flex: 0 0 18%; }
+
+.main {
+  flex: 1; }
