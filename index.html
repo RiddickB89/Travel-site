@@ -15,7 +15,35 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">header</header>
+      <header class="header">
+        <img src="./img/logo.png" class="img-logo" alt="logo"></img>
+          <form action="#" class="search">
+            <input type="text" placeholder="Search hotels" class="search__input"/>
+            <button class="search__button">
+              <svg class="search__icon">
+                <use href="./img/sprite.svg#icon-search" />
+              </svg>
+            </button>
+          </form>
+          <div class="user-bar">
+            <div class="user-bar__container">
+              <svg class="user-bar__icon">
+                <use href="./img/sprite.svg#icon-copy" />
+              </svg>
+              <span class="user-bar__notification">7</span>
+            </div>
+            <div class="user-bar__container">
+              <svg class="user-bar__icon">
+                <use href="./img/sprite.svg#icon-bubbles" />
+              </svg>
+              <span class="user-bar__notification">10</span>
+            </div>
+            <div class="user-bar__profile">
+              <img class="user-bar__profile--img" src="./img/user.jpg" alt="user profile photo" />
+              <span class="user-bar__profile--name">Seba</span>
+            </div>
+          </div>
+      </header>
       <div class="content">
         <aside class="sidebar">aside</aside>
         <main class="main">main</main>

@@ -1,0 +1,112 @@
+.img-logo {
+  height: 3rem;
+  margin-left: 2rem;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 40%;
+
+  &__input {
+    width: 90%;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 20rem;
+    padding: 0.75rem 2rem;
+    margin-right: -4rem;
+    background-color: var(--grey-light-2);
+    border: none;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      width: 100%;
+      outline: none;
+      background-color: var(--grey-light-3);
+    }
+
+    &::placeholder {
+      font-size: inherit;
+      color: var(--grey-light-4);
+    }
+  }
+
+  &__input:focus ~ &__button {
+    background-color: var(--grey-light-3);
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: var(--grey-light-2);
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--grey-dark-3);
+  }
+}
+
+.user-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+
+  & > * {
+    cursor: pointer;
+    height: 100%;
+  }
+
+  & > *:hover {
+    background-color: var(--grey-light-2);
+  }
+
+  &__container {
+    display: flex;
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  &__notification {
+    border-radius: 100%;
+    background-color: var(--primary);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5%;
+    color: #fff;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    align-self: center;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &--img {
+      width: 4rem;
+      height: 4rem;
+      margin-left: 2rem;
+      border-radius: 100%;
+    }
+
+    &--name {
+      margin-right: 2rem;
+    }
+  }
+}

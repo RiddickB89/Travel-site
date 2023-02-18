@@ -30,6 +30,88 @@ body {
   background-image: linear-gradient(to bottom right, var(--primary-light), var(--primary-dark));
   min-height: 100vh; }
 
+.img-logo {
+  height: 3rem;
+  margin-left: 2rem; }
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 40%; }
+  .search__input {
+    width: 90%;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 20rem;
+    padding: 0.75rem 2rem;
+    margin-right: -4rem;
+    background-color: var(--grey-light-2);
+    border: none;
+    transition: all 0.3s ease-in-out; }
+    .search__input:focus {
+      width: 100%;
+      outline: none;
+      background-color: var(--grey-light-3); }
+    .search__input::placeholder {
+      font-size: inherit;
+      color: var(--grey-light-4); }
+  .search__input:focus ~ .search__button {
+    background-color: var(--grey-light-3); }
+  .search__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: var(--grey-light-2); }
+  .search__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--grey-dark-3); }
+
+.user-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch; }
+  .user-bar > * {
+    cursor: pointer;
+    height: 100%; }
+  .user-bar > *:hover {
+    background-color: var(--grey-light-2); }
+  .user-bar__container {
+    display: flex;
+    padding: 1.5rem;
+    position: relative; }
+  .user-bar__notification {
+    border-radius: 100%;
+    background-color: var(--primary);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5%;
+    color: #fff; }
+  .user-bar__icon {
+    width: 3rem;
+    height: 3rem;
+    align-self: center; }
+  .user-bar__profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .user-bar__profile--img {
+      width: 4rem;
+      height: 4rem;
+      margin-left: 2rem;
+      border-radius: 100%; }
+    .user-bar__profile--name {
+      margin-right: 2rem; }
+
 .container {
   max-width: 140rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.8);
@@ -38,6 +120,10 @@ body {
   background-color: var(--grey-light-1); }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--grey-light-2); }
